@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    
+    <title>Contacto</title>
+  </head>
+  <body>
+
+    <header class="tracking-midwide p-20px md:p-30px flex fixed bg-grey md:bg-transparent	w-full items-center">
+      <span class="text-white text-2xl font-bold"><span class="text-accent">Emo</span>Sound</span>
+
+      <nav class="ml-auto flex items-center text-right">
+        <ul class="">
+          <li class="inline-block mr-2">
+            <a class="text-white hover:text-accent" href="/index.html">Home</a>
+          </li>
+          <li class="inline-block mr-2">
+            <a class="text-white hover:text-accent" href="/contact.html">Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col justify-center items-center min-h-screen	tracking-midwide text-center bg-gradient-to-b from-grey to-black pb-100px">
+      <h1 class="font-custom-serif text-accent mb-50px mt-100px text-2.5rem">Contacto</h1>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form w-90% md:w-50% xl:w-30% text-white border border-accent box-border shadow-accent mb-20px p-20px">
+        <div class="mb-4 text-left">
+            <label for="name" class="border-box inline-block mb-2">Nombre: </label>
+            <input id="name" class="form-control" type="text" name="name" placeholder="Carlos Roldán"/>
+        </div>
+
+        <div class="mb-4 text-left">
+          <label for="email" class="border-box inline-block mb-2">Email: </label>
+          <input id="email" class="form-control" type="email" name="email" placeholder="ejemplo@gmail.com"/>
+        </div>
+        <div class="mb-4 text-left">
+          <label for="message" class="border-box inline-block mb-2">Mensaje: </label>
+          <textarea class="form-control h-150px" name="message" placeholder="¡Cuéntanos lo que te apetezca!"></textarea>
+        </div>
+        <div class="mb-4 text-center">
+          <button type="submit" class="tracking-midwide py-1.5 px-3 hover:bg-darkAccent text-black bg-accent rounded inline-block font-bold">Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="tracking-midwide p-30px bg-grey">
+      <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row">
+        <span class="text-white font-sans text-2xl font-bold m4 flex-100%-fixed md:flex-none"><span class="text-accent">Emo</span>Sound</span>
+        <nav class="mr-auto md:m-auto">
+          <ul class="mb-4">
+            <li class="inline-block mr-2">
+              <a class="text-white hover:text-accent" href="/index.html">Home</a>
+            </li>
+            <li class="inline-block mr-2">
+              <a class="text-white hover:text-accent" href="/contact.html">Contacto</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="footer__social-links mb-4">
+          <ul class="">
+            <li class="inline-block mr-2">
+              <a href=""><i class="text-white not-italic hover:text-accent text-2xl fa-instagram font-fab"></i></a>
+            </li>
+            <li class="inline-block mr-2">
+              <a href=""><i class="text-white not-italic hover:text-accent text-2xl fa-twitter font-fab"></i></a>
+            </li>
+            <li class="inline-block mr-2">
+              <a href=""><i class="text-white not-italic hover:text-accent text-2xl fa-facebook font-fab"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-lightGrey">
+        Todas las imágenes de este sitio web pertenecen a sus respectivos autores y utilizan bajo "fair use" para fines puramente educativos. El contenido de esta web no tiene ánimo de lucro.
+      </p>
+
+      <script src="./assets/scripts/main.js"></script>
+    </footer>
+  </body>
+</html>

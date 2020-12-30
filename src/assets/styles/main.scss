@@ -1,0 +1,46 @@
+/**
+ * Import variables
+ */
+
+@tailwind base;
+@tailwind components;
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@tailwind utilities;
+
+@layer components {
+  .group-card {
+    @apply text-white border border-accent box-border shadow-accent mb-20px flex-95%-fixed md:flex-45%-fixed xl:flex-30%-fixed;
+  }
+
+  .group-card-image {
+    @apply w-full h-full max-w-full object-cover;
+  }
+
+  .group-card-title {
+    @apply font-serif text-2rem mb-2;
+  }
+
+  .form-control {
+    @apply block w-full py-1.5 px-3 leading-6 text-greyText bg-white bg-clip-padding border rounded border-lightGrey box-border overflow-visible tracking-midwide;
+  }
+}
+
+/**
+ * Do NOT include anything else in this file!
+ */
